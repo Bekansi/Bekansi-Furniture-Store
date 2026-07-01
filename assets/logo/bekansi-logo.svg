@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50" width="200" height="50" preserveAspectRatio="xMidYMid meet">
+  <!-- Logo Background -->
+  <rect width="200" height="50" fill="none"/>
+  
+  <!-- Bekansi Text Logo -->
+  <text x="100" y="35" font-family="Poppins, sans-serif" font-size="28" font-weight="700" text-anchor="middle" fill="#3B2417">
+    Bekansi
+  </text>
+  
+  <!-- Tagline -->
+  <text x="100" y="48" font-family="Lora, serif" font-size="8" text-anchor="middle" fill="#D4A24C" letter-spacing="2">
+    FURNITURE & DESIGN
+  </text>
+  
+  <!-- Decorative Gold Line -->
+  <line x1="20" y1="40" x2="180" y2="40" stroke="#D4A24C" stroke-width="1" opacity="0.5"/>
+</svg>
