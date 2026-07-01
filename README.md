@@ -44,6 +44,7 @@ This project now includes professional logo and branding assets:
 ├── script.js                 # All interactivity (cart, wishlist, filters, etc.)
 ├── README.md
 ├── LOGO-GUIDELINES.md       # Logo usage & branding standards
+├── Screenshot_20260630-034220.jpg  # Brand screenshot reference
 └── assets/
     ├── images/                # Reserved for real product/gallery photography
     ├── icons/
@@ -99,7 +100,7 @@ This project now includes professional logo and branding assets:
 ## 🚀 Deploying to GitHub Pages
 
 1. Create a new GitHub repository (e.g. `bekansi-furniture`).
-2. Upload all project files (`index.html`, `style.css`, `script.js`, `README.md`, `LOGO-GUIDELINES.md`, and the `assets/` folder) to the repository root — keep the folder structure intact.
+2. Upload all project files (`index.html`, `style.css`, `script.js`, `README.md`, `LOGO-GUIDELINES.md`, `Screenshot_20260630-034220.jpg`, and the `assets/` folder) to the repository root — keep the folder structure intact.
 3. Go to **Settings → Pages**.
 4. Under **Source**, select the `main` branch and `/ (root)` folder.
 5. Save. Your site will be live at:
@@ -131,9 +132,11 @@ No build step, no `node_modules`, no server — just static files.
 
 ---
 
-## 🎯 Logo Usage
+## 🎯 Logo & Branding
 
 For detailed logo usage guidelines, color specifications, minimum sizes, clear space requirements, and format conversions, see **`LOGO-GUIDELINES.md`**.
+
+**Screenshot Reference:** The brand screenshot (`Screenshot_20260630-034220.jpg`) is available as a reference for the company's visual identity and can be used for documentation or marketing materials.
 
 ---
 
