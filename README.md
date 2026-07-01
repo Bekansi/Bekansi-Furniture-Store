@@ -2,7 +2,24 @@
 
 **We Design Comfort. We Build Elegance.**
 
-A premium, fully responsive furniture e-commerce website for **Bekansi Furniture & Interior Design**, based in Addis Ababa, Ethiopia. Built entirely with **HTML5, CSS3, and Vanilla JavaScript** — no frameworks, no build tools, no backend. Ready to deploy directly to **GitHub Pages**.
+A premium, fully responsive furniture e-commerce website for **Bekansi Furniture & Interior Design**, based in Addis Ababa, Ethiopia. Built entirely with **HTML5, CSS3, and Vanilla JavaScript** — no frameworks, no dependencies.
+
+---
+
+## 🎨 Logo & Branding
+
+This project now includes professional logo and branding assets:
+
+- **Primary Logo:** `assets/logo/bekansi-logo.svg` (200×50px, scalable)
+- **Favicon:** `assets/logo/bekansi-favicon.svg` (64×64px, dark brown with gold accent)
+- **Brand Screenshot:** `Screenshot_20260630-034220.jpg` (reference asset)
+- **Branding Guidelines:** See `LOGO-GUIDELINES.md` for detailed usage standards
+
+### Brand Colors
+- **Primary:** Dark Brown `#3B2417`
+- **Accent:** Gold `#D4A24C`
+- **Background:** Beige `#F5E6D3`
+- **Secondary Text:** Light Gray `#6B5B52`
 
 ---
 
@@ -26,16 +43,19 @@ A premium, fully responsive furniture e-commerce website for **Bekansi Furniture
 ├── style.css                # All styling, theming & responsive rules
 ├── script.js                 # All interactivity (cart, wishlist, filters, etc.)
 ├── README.md
+├── LOGO-GUIDELINES.md       # Logo usage & branding standards
 └── assets/
     ├── images/                # Reserved for real product/gallery photography
     ├── icons/
     │   └── sprite.svg          # Source reference for the icon set (inlined in HTML)
     └── logo/
-        ├── logo.svg            # Bekansi logo (header & footer)
-        └── favicon.svg          # Site favicon
+        ├── logo.svg            # Original Bekansi logo (header & footer)
+        ├── bekansi-logo.svg    # New primary logo design
+        ├── favicon.svg         # Original site favicon
+        └── bekansi-favicon.svg # New favicon design
 ```
 
-> **Note on imagery:** This build ships with elegant SVG iconography and CSS gradient "product art" instead of stock photography, so the site works perfectly offline and loads instantly with zero external image requests. Drop real photography into `assets/images/` and swap the relevant `<svg>` blocks in `script.js` (`PRODUCTS` / `GALLERY` arrays) for `<img>` tags whenever real photos are ready — the layout is already built to support it.
+> **Note on imagery:** This build ships with elegant SVG iconography and CSS gradient "product art" instead of stock photography, so the site works perfectly offline and loads instantly with zero external image requests.
 
 ---
 
@@ -79,7 +99,7 @@ A premium, fully responsive furniture e-commerce website for **Bekansi Furniture
 ## 🚀 Deploying to GitHub Pages
 
 1. Create a new GitHub repository (e.g. `bekansi-furniture`).
-2. Upload all project files (`index.html`, `style.css`, `script.js`, `README.md`, and the `assets/` folder) to the repository root — keep the folder structure intact.
+2. Upload all project files (`index.html`, `style.css`, `script.js`, `README.md`, `LOGO-GUIDELINES.md`, and the `assets/` folder) to the repository root — keep the folder structure intact.
 3. Go to **Settings → Pages**.
 4. Under **Source**, select the `main` branch and `/ (root)` folder.
 5. Save. Your site will be live at:
@@ -92,10 +112,11 @@ No build step, no `node_modules`, no server — just static files.
 
 ## ⚙️ Customization Guide
 
-- **Products:** Edit the `PRODUCTS` array at the top of `script.js`. Each product supports `name`, `category`, `price` (ETB, use `0` for "Quote on Request"), `oldPrice`, `rating`, `reviews`, `badge`, `desc`, and a `specs` object.
+- **Products:** Edit the `PRODUCTS` array at the top of `script.js`. Each product supports `name`, `category`, `price` (ETB, use `0` for "Quote on Request"), `oldPrice`, `rating`, `reviews`, `badge`, `image` (CSS gradient), and `specs`.
 - **Gallery:** Edit the `GALLERY` array in `script.js`.
 - **Testimonials:** Edit the `TESTIMONIALS` array in `script.js`.
 - **Brand colors:** All colors are defined as CSS variables at the top of `style.css` (`:root`) — change `--color-dark-brown`, `--color-gold`, `--color-beige`, etc.
+- **Logo files:** Replace `assets/logo/bekansi-logo.svg` and `assets/logo/bekansi-favicon.svg` with your own designs, or update the HTML `src` attributes.
 - **WhatsApp number:** Update the `WHATSAPP_NUMBER` constant in `script.js` and the `href="https://wa.me/..."` links in `index.html`.
 - **Fonts:** Headings use **Poppins**; body copy uses **Lora** (both loaded from Google Fonts in `index.html`).
 
@@ -106,7 +127,13 @@ No build step, no `node_modules`, no server — just static files.
 - No external JS dependencies — all cart/wishlist/theme state is stored client-side via `localStorage`.
 - Icons are SVG `<symbol>` references inlined directly in `index.html` for guaranteed cross-browser rendering (no extra HTTP requests).
 - The site is a single HTML page with anchor-linked sections for maximum speed and simplicity; URLs like `#catalog`, `#gallery`, `#contact` work as deep links.
-- Tested for Lighthouse performance, accessibility, best practices, and SEO — built with semantic markup, deferred scripts, system fonts as fallback, and no layout-shifting assets to support scores above 95 across categories.
+- Tested for Lighthouse performance, accessibility, best practices, and SEO — built with semantic markup, deferred scripts, system fonts as fallback, and no layout-shifting assets.
+
+---
+
+## 🎯 Logo Usage
+
+For detailed logo usage guidelines, color specifications, minimum sizes, clear space requirements, and format conversions, see **`LOGO-GUIDELINES.md`**.
 
 ---
 
